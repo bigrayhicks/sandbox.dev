@@ -1,5 +1,4 @@
 <?php
-
 global $project;
 $project = 'mysite';
 
@@ -7,7 +6,7 @@ global $database;
 $database = '';
 
 require_once('conf/ConfigureFromEnv.php');
-
+throw new Exception('here');
 // Set the current theme. More themes can be downloaded from
 // http://www.silverstripe.org/themes/
 SSViewer::set_theme('pure');
