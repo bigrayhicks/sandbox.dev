@@ -20,3 +20,5 @@ EnvironmentCheckSuite::register('pingdom', 'URLCheck("")', "Homepage accessible"
 EnvironmentCheckSuite::register('pingdom', 'DatabaseCheck', "Connect to database");
 EnvironmentCheckSuite::register('pingdom', 'ExternalURLCheck("https://stojg.se/", "5")', "Connect to stojg.se?");
 EnvironmentCheckSuite::register('support', 'DatabaseCheck', "Connect to database");
+
+NonExistingClassThrowsFatalInDevBuild::init();
