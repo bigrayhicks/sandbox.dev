@@ -22,4 +22,4 @@ EnvironmentCheckSuite::register('pingdom', 'ExternalURLCheck("https://stojg.se/"
 EnvironmentCheckSuite::register('support', 'DatabaseCheck', "Connect to database");
 
 // intentionally break this to check deployments
-Director::forceWWW();
+die();
