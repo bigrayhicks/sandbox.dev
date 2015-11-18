@@ -1,2 +1,2 @@
-infrastructure: "master"
+infrastructure: "no-devbuild-output"
 base: "debian-jessie"
