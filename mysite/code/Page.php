@@ -85,11 +85,20 @@ class Page extends SiteTree {
 
 class Page_Controller extends ContentController {
 
+	private static $allowed_actions = array(
+		'slow'
+	);
+
 	public function init() {
 		parent::init();
 		Requirements::themedCSS('reset');
 		Requirements::themedCSS('layout');
 		Requirements::themedCSS('typography');
 		Requirements::themedCSS('form');
+	}
+
+	public function slow(SS_HTTPRequest $request) {
+		sleep(1);
+		return sprintf('Request %d finished', $request->getVar('q'));
 	}
 }

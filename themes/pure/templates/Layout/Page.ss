@@ -8,6 +8,15 @@
 			<h1 class="page-header">$Title</h1>
 			$Content
 			$Form
+
+			<% if $CurrentMember %>
+				<div class="one">waiting...</div>
+				<div class="two">waiting...</div>
+				<div class="three">waiting...</div>
+			<% else %>
+				please login to check session
+			<% end_if %>
+
 			<% include RelatedPages %>
 			$PageComments
 		</div>
