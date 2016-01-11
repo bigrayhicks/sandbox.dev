@@ -1,2 +1,2 @@
 infrastructure: "nfs-template"
-base: "debian-jessie"
+base: "debian-wheezy"
