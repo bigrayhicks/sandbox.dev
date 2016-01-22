@@ -1,2 +1,2 @@
-infrastructure: "master"
+infrastructure: "fix-permissions"
 base: "debian-jessie"
