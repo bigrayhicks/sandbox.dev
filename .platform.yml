@@ -1,2 +1,2 @@
 infrastructure: 2.0.4
-base: "debian-jessie"
+base: "debian-wheezy"
