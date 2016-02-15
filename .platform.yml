@@ -1,2 +1,2 @@
-infrastructure: 3.0.2
+infrastructure: "payload-path2"
 base: "debian-jessie"
