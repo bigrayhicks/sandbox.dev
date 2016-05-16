@@ -1,10 +1,15 @@
-infrastructure: 3.2.1
+infrastructure: master
 shared_dirs:
   mysite:
-    testfolder: {}
+    assets: {}
+    cache: {}
+  cbsmall1:
+    cache: {}
+    staticassets: {}
+    somedir: {}
 apache:
   prefork:
-    startservers: "4"
+    startservers: "5"
     minspareservers: "3"
     maxspareservers: "7"
     maxclients: "35"
