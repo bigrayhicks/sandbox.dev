@@ -6,7 +6,6 @@ shared_dirs:
   cbsmall1:
     cache: {}
     staticassets: {}
-    somedir: {}
 apache:
   prefork:
     startservers: "5"
