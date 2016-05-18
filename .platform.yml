@@ -1,1 +1,2 @@
 infrastructure: nfs-failover-2.0
+base: debian-jessie
