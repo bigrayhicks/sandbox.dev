@@ -20,3 +20,16 @@ php_settings:
     post_max_size: "128M"
   cli:
     memory_limit: "2048M"
+alerts:
+    prod-check:
+      check_url: "/about-us/"
+      environment: "Production"
+      contacts:
+        - "stig@silverstripe.com"
+        - "sean@silverstripe.com"
+    uat-check:
+      check_url: "/"
+      environment: "UAT"
+      contacts:
+        - "stig@silverstripe.com"
+        - "sean@silverstripe.com"
