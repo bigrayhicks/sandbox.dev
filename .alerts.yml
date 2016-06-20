@@ -1,11 +1,13 @@
 alerts:
   dev-check:
-    envcheck-suite: "pingdom"
+    check_url: "/about-us/"
     environment: "Production"
     contacts:
       - "stig@silverstripe.com"
       - "sean@silverstripe.com"
   support:
-    envcheck-suite: "support"
+    check_url: "/"
     environment: "UAT"
     contacts:
+      - "stig@silverstripe.com"
+      - "sean@silverstripe.com"
