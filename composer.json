@@ -2,7 +2,7 @@
   "name": "stojg/sandbox.dev",
   "description": "This is stigs SilverStripe sandbox",
   "require": {
-    "php": ">=5.5",
+    "php": ">=5.4",
     "silverstripe/cms": "3.1.*@stable",
     "silverstripe/framework": "3.1.*@stable",
     "silverstripe/crontask": "*",
@@ -13,7 +13,10 @@
     "phpunit/phpunit": "3.7.*@stable"
   },
   "config": {
-    "process-timeout": 600
+    "process-timeout": 600,
+    "platform": {
+      "php": "5.4.37"
+    }
   },
   "minimum-stability": "dev"
 }
