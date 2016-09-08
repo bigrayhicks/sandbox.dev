@@ -82,6 +82,12 @@ class Page extends SiteTree {
 
 		return [];
 	}
+
+	public function requireDefaultRecords() {
+		parent::requireDefaultRecords();
+		// Pretend busy work
+		if ($this->ClassName==='Page') sleep(60);
+	}
 }
 
 class Page_Controller extends ContentController {
