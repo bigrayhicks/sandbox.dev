@@ -16,7 +16,7 @@ crons:
     command: "echo \"test cron run 123\" | logger -t SilverStripe_cron"
 http_settings:
   max_upload_size: "128"
-  timezone: "Pacific/Auckland"
+  timezone: "Europe/London"
 php_settings:
   cli:
     memory_limit: "2048M"
