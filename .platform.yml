@@ -1,4 +1,4 @@
-infrastructure: ">=3.0.0 <3.2.0"
+infrastructure: "279e1e93f1ed2cb4b75161f9e3b53052aef02def"
 shared_dirs:
   mysite:
     testfolder: {}
