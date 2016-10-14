@@ -1,4 +1,4 @@
-infrastructure: 3.6.8
+infrastructure: "enable-http2"
 shared_dirs:
   mysite:
     testfolder: {}
