@@ -1,4 +1,4 @@
-infrastructure: 3.6.9
+infrastructure: test
 shared_dirs:
   mysite:
     testfolder: {}
@@ -20,3 +20,7 @@ http_settings:
 php_settings:
   cli:
     memory_limit: "2048M"
+url_rules:
+  mysite:
+    - '^/assets/': 'apache'
+    - '\.(gif|jpg|jpeg)$': 'deny'
