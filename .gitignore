@@ -10,4 +10,5 @@ vendor/
 assets/
 silverstripe-cache/
 silverstripe-dynamodb
+silverstripe-elastica
 

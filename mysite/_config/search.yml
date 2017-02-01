@@ -1,0 +1,31 @@
+---
+Name: search
+---
+Heyday\Elastica\ElasticaService: # Example of customising the index config on the elastic search server (completely optional).
+  index_config:
+    analysis:
+      analyzer:
+        default :
+          type : custom
+          tokenizer : standard
+          filter :
+            - standard
+            - lowercase
+            - stemming_filter
+      filter:
+        stemming_filter:
+          type: snowball
+          language: English
+
+Director:
+  rules:
+    'search': 'SearchController'
+
+Page:
+  extensions:
+    - Heyday\Elastica\Searchable
+  indexed_fields: &page_defaults
+    - Title
+    - MenuTitle
+    - Content
+    - MetaDescription

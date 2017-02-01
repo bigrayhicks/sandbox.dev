@@ -93,4 +93,19 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('typography');
 		Requirements::themedCSS('form');
 	}
+
+	public function SearchForm() {
+		return new Form(
+			SearchController::create(),
+			'/',
+			new FieldList([
+				new TextField('for', '', $this->getRequest()->requestVar('for'))
+			]),
+			new FieldList([
+				new FormAction('submit', 'search')
+			])
+		);
+
+
+	}
 }

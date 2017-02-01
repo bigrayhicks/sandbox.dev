@@ -1,4 +1,4 @@
-infrastructure: ^3.7.2
+infrastructure: dev-elastic_search
 shared_dirs:
   mysite:
     testfolder: {}

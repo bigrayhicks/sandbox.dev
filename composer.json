@@ -7,7 +7,10 @@
     "silverstripe/framework": "~3.5.0@stable",
     "silverstripe/crontask": "*",
     "silverstripe/environmentcheck": "*",
-    "silverstripe/dynamodb": "*"
+    "silverstripe/dynamodb": "*",
+    "heyday/silverstripe-elastica": "~1.0",
+    "monolog/monolog": "~1.0",
+    "ruflin/elastica": "3.1.1 as 3.1.0"
   },
   "require-dev": {
     "phpunit/PHPUnit": "~4.8@stable"
