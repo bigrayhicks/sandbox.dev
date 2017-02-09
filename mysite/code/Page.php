@@ -91,6 +91,6 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
-		Requirements::themedCSS('typography');
+		Requirements::themedCSS('layout');
 	}
 }
