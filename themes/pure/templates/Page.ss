@@ -62,6 +62,7 @@
 		<% else %>
 			$Layout
 		<% end_if %>
+		$Form
 
 
 	</div>

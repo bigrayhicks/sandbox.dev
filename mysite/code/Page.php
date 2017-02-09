@@ -56,7 +56,7 @@ class Page extends SiteTree {
 		$platform = new ArrayList();
 		foreach($this->getPlatformYaml() as $key => $value) {
 			$platform->push(new ArrayData([
-				'Value' => sprintf("%s: %s", $key, $value)
+				'Value' => sprintf("%s: %s", $key, var_export($value, true))
 			]));
 		}
 		$list = new ArrayList();
