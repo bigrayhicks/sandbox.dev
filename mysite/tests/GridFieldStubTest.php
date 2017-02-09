@@ -1,5 +1,13 @@
 <?php
 
+use SilverStripe\Dev\SapphireTest;
+use SilverStripe\Dev\TestOnly;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\Form;
+use SilverStripe\Forms\GridField\GridField;
+use SilverStripe\ORM\ArrayList;
+use SilverStripe\Security\Member;
+
 class GridFieldStubTest extends SapphireTest {
 
 	/**

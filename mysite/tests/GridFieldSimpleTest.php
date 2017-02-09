@@ -1,5 +1,13 @@
 <?php
 
+use SilverStripe\Control\Controller;
+use SilverStripe\Dev\SapphireTest;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\Form;
+use SilverStripe\Forms\GridField\GridField;
+use SilverStripe\ORM\ArrayList;
+use SilverStripe\Security\Member;
+
 class GridFieldSimpleTest extends SapphireTest {
 
 	/**

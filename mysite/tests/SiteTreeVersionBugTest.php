@@ -1,4 +1,11 @@
 <?php
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Dev\SapphireTest;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\Form;
+use SilverStripe\Forms\TextField;
+use SilverStripe\ORM\DataObject;
+
 class SiteTreeVersionBugTest extends SapphireTest {
 	/**
 	 * Mimic the logic from CMSMain::save() with writeWithoutVersion() and later write()
