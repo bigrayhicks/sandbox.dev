@@ -56,7 +56,7 @@ class Page extends SiteTree {
 		$platform = new ArrayList();
 		foreach($this->getPlatformYaml() as $key => $value) {
 			$platform->push(new ArrayData([
-				'Value' => sprintf("%s: %s", $key, var_export($value, true))
+				'Value' => sprintf("%s: %s", $key, $value)
 			]));
 		}
 		$list = new ArrayList();
@@ -79,13 +79,10 @@ class Page extends SiteTree {
 
 	protected function getPlatformYaml() {
 
-		require_once(BASE_PATH.'/'.FRAMEWORK_DIR.'/thirdparty/spyc/spyc.php');
-
 		$filePath = BASE_PATH.'/.platform.yml';
 		if(is_readable($filePath)) {
-			return Spyc::YAMLLoad($filePath);
+			return \Symfony\Component\Yaml\Yaml::parse($filePath);
 		}
-
 		return [];
 	}
 }
@@ -94,9 +91,6 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
-		Requirements::themedCSS('reset');
-		Requirements::themedCSS('layout');
 		Requirements::themedCSS('typography');
-		Requirements::themedCSS('form');
 	}
 }

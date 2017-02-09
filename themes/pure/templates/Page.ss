@@ -85,10 +85,10 @@
 		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=$SiteConfig.AddThisProfileID"></script>
 	<% end_if %>
 
-	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/modernizr.min.js"></script>
-<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/jquery.flexslider.js"></script>
-<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/plugins.js"></script>
-<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/general.js"></script>
+<script type="text/javascript" src="{$BaseHref}/themes/pure/js/libs/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{$BaseHref}/themes/pure/js/libs/modernizr.min.js"></script>
+<script type="text/javascript" src="{$BaseHref}/themes/pure/js/libs/jquery.flexslider.js"></script>
+<script type="text/javascript" src="{$BaseHref}/themes/pure/js/plugins.js"></script>
+<script type="text/javascript" src="{$BaseHref}/themes/pure/js/general.js"></script>
 </body>
 </html>
